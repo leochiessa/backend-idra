@@ -1,7 +1,7 @@
 package backend.services;
 
 import backend.models.Student;
-import backend.repositories.StudentRepository;
+//import backend.repositories.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +15,7 @@ import static org.springframework.http.HttpStatus.*;
 @Service
 public class StudentService {
 
+/*
     private final StudentRepository sr;
 
     @Autowired
@@ -62,4 +63,5 @@ public class StudentService {
             return ResponseEntity.status(INTERNAL_SERVER_ERROR).build();
         }
     }
+*/
 }
