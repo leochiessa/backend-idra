@@ -15,12 +15,11 @@ public class StudentController {
     @Autowired
     private StudentService ss;
 
-    @GetMapping("/getAll")
-    public String getAll() {
-        return "Hola Mundo!";
+    @GetMapping("/helloWorld")
+    public String helloWorld() {
+        return "Hello World!";
     }
 
-    /*
     @GetMapping("/getAll")
     public List<Student> getAll() {
         return ss.getAll();
@@ -40,5 +39,4 @@ public class StudentController {
     public ResponseEntity deleteStudent(@PathVariable final Integer id) {
         return ss.deleteStudent(id);
     }
-    */
 }
